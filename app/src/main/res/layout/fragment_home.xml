@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    tools:context=".HomeFragment">
+
+
+    <ImageButton
+        android:id="@+id/shazam"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#2299F8"
+        android:scaleType="centerInside"
+        android:padding="20dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/shazam_icon"
+        app:fabCustomSize="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:srcCompat="@drawable/shazam_icon"
+        android:background="@drawable/round_bg"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:padding="1dp"
+        android:src="@drawable/ic_search"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shazam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_search"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_bg"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>
